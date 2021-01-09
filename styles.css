@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 4px;
 }
 
 body {
@@ -79,26 +79,68 @@ main img {
     margin-bottom: 1rem;
 }
 
+/* search bar styles */
 .form {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 8rem;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.form #searchbar {
+    color: #9aa0a6;
+    height: 5rem;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.form #searchbar:hover, .form #searchbar:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+.form #searchbar input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0 1rem;
+}
+.form #searchbar:first-child,
+.form #searchbar:last-child {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.form input {
-    margin: 0 2rem;
-    max-width: 90vw;
-    height: 4rem;
-    min-width: 90%;
-}
-
-@media(min-width: 700px){
-    .form input {
-       max-width: 50%;
+@media(min-width: 760px){
+    html {
+        font-size: 10px;
     }
+    .form #searchbar {
+        width: 100%;
+        max-width: 60rem;
+    }
+}
+
+/* button styles */
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30rem;
+    height: 4rem;
+}
+.button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    height: 100%;
+    width: 13rem;
+    font-size: 1.4rem;
+    color: #3c4043;
+    border-radius: 0.4rem;
 }
 
 /* footer styles */

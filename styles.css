@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: arial, sans-serif;
+    color: #202124;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+/* nav styles */
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+nav a {
+    font-size: 1.3rem;
+}
+nav a, .business-links a, .settings-info a {
+    text-decoration: none;
+}
+nav a:hover, .business-links a:hover, .settings-info a:hover {
+    text-decoration: underline;
+}
+.google-info {
+    display: flex;
+    width: 13rem;
+    justify-content: space-evenly;
+}
+.google-info a {
+    color: rgba(0, 0, 0, 0.75);
+}
+.account-info {
+    display: flex;
+    width: 25rem;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.account-info a {
+    color: rgba(0, 0, 0, 0.87)
+}
+.account-info button {
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    outline: none;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.2rem;
+}
+#menu-icon {
+    color: rgba(0, 0, 0, 0.55);
+}
+#menu-icon:hover {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* main styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    margin-top: 8%;
+    margin-bottom: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 8rem;
+    justify-content: space-evenly;
+}
+
+.form input {
+    margin: 0 2rem;
+    max-width: 90vw;
+    height: 4rem;
+    min-width: 90%;
+}
+
+@media(min-width: 700px){
+    .form input {
+       max-width: 50%;
+    }
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgba(0,0,0,.54);
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid rgb(218, 220, 224);
+    border-bottom: 1px solid rgb(218, 220, 224);
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.country, .links {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.country {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 220, 224);
+    width: 100%;
+    height: 55%;
+}
+
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 45%;
+}
+
+#neutral {
+    height: 1.4rem;
+    width: auto;
+}
+
+.business-links a, .settings-info a {
+    color: inherit;
+}
+
+.business-links a:not(:first-child){
+    margin-left: 2rem;
+}
+
+.settings-info a:not(:last-child){
+    margin-right: 2rem;
+}

@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="icon" type="image/png" href="Google-favicon-2015.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <div>
-            About Store
+        <div class="google-info">
+            <a href="#">About</a>
+            <a href="#">Store</a>
         </div>
-        <div>
-            Gmail Images Sign in
+        <div class="account-info">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <a href="#" id="menu-icon" ><i class="fas fa-th"></i></a>
+            <button>Sign in</button>
         </div>
     </nav>
     <main>
-        <img src="googlelogo_color_272x92dp.png" alt="Google logo">
-        <form>
+        <img class="logo" src="googlelogo_color_272x92dp.png" alt="Google logo">
+        <form class="form">
             <input type="text">
             <div>
                 <button>Google Search</button>
@@ -27,18 +32,22 @@
         </form>
     </main>
     <footer>
-        <div>
+        <div class="country">
             United Kingdom
         </div>
-        <div>
-            <div>
-                Adv Busin Search
+        <div class="links">
+            <div class="business-links">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
             </div>
-            <div>
-                Carbon neutral since 2007
+            <div class="carbon-neutral">
+                <img id="neutral" src="carbonneutralgoogle.png" alt=""> Carbon neutral since 2007
             </div>
-            <div>
-                Privacy Terms Settings
+            <div class="settings-info">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </div>
         </div>
     </footer>
